@@ -58,9 +58,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DOTween\Modules\DOTweenModuleAudio.cs" />
+     <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics.cs" />
+     <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+     <Compile Include="Assets\DOTween\Modules\DOTweenModuleSprite.cs" />
+     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUI.cs" />
+     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUtils.cs" />
      <Compile Include="Assets\Scripts\Base\Singleton.cs" />
      <Compile Include="Assets\Scripts\Base\UnitySingleton.cs" />
+     <Compile Include="Assets\Scripts\UI\Chest.cs" />
      <Compile Include="Assets\Scripts\UI\Root.cs" />
+     <None Include="Assets\Spine\version.txt" />
+     <None Include="Assets\CustomPlugins\AEPToUnityAnimation\readme.txt" />
+     <None Include="Assets\CustomPlugins\AEPToUnityAnimation\EAPToUnityTool\Plugins\JsonFx\License.txt" />
+     <None Include="Assets\DOTween\readme.txt" />
+     <None Include="Assets\CustomPlugins\AEPToUnityAnimation\EAPToUnityTool\AEPScript\ExportAITool\readme.txt" />
+     <None Include="Assets\CustomPlugins\AEPToUnityAnimation\EAPToUnityTool\Plugins\JsonFx\Readme.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/zhaochi/Chest_0423Test/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
@@ -318,6 +332,12 @@
  </Reference>
  <Reference Include="UnityEngine.XRModule">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.24f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="JsonFx.json">
+ <HintPath>/Users/zhaochi/Chest_0423Test/Assets/CustomPlugins/AEPToUnityAnimation/EAPToUnityTool/Plugins/JsonFx/JsonFx.json.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Users/zhaochi/Chest_0423Test/Assets/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.24f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -670,6 +690,24 @@
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.24f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="spine-unity-examples.csproj">
+      <Project>{06D67CB5-8421-030E-6C33-2875DCF2039E}</Project>
+      <Name>spine-unity-examples</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity.csproj">
+      <Project>{20A2754C-02E3-873C-B83B-9C8F5F9C2607}</Project>
+      <Name>spine-unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity-examples-editor.csproj">
+      <Project>{9E4BC705-EF0B-5B94-4267-893EA6C007EF}</Project>
+      <Name>spine-unity-examples-editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity-editor.csproj">
+      <Project>{E402E94B-0F5F-558E-6F0C-CBFD968D69E1}</Project>
+      <Name>spine-unity-editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
