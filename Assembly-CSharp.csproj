@@ -67,6 +67,9 @@
      <Compile Include="Assets\DOTween\Modules\DOTweenModuleUtils.cs" />
      <Compile Include="Assets\Scripts\Base\Singleton.cs" />
      <Compile Include="Assets\Scripts\Base\UnitySingleton.cs" />
+     <Compile Include="Assets\Scripts\Data\CoinDataClass.cs" />
+     <Compile Include="Assets\Scripts\Data\StaticData.cs" />
+     <Compile Include="Assets\Scripts\UI\Box.cs" />
      <Compile Include="Assets\Scripts\UI\Chest.cs" />
      <Compile Include="Assets\Scripts\UI\Root.cs" />
      <None Include="Assets\Spine\version.txt" />
