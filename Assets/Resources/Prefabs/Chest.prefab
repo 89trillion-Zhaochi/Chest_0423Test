@@ -560,6 +560,7 @@ MonoBehaviour:
   viewPortTs: {fileID: 905840559106945912}
   box: {fileID: 325345781508438780, guid: 64b212fa085074b3cb687a7c0b4a38f0, type: 3}
   coinUI: {fileID: 2668914806289802253}
+  coinAmount: {fileID: 2003034560265594026}
 --- !u!1 &5063230750789983274
 GameObject:
   m_ObjectHideFlags: 0
