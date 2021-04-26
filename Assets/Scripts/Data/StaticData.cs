@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Data
 {
-    public class StaticData : Singleton<CoinDataClass>
+    public abstract class StaticData : Singleton<CoinDataClass>
     {
         
     }

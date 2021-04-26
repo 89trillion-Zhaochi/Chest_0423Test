@@ -5,6 +5,7 @@ using Data;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.Serialization;
 
 public class Box : MonoBehaviour
 {
@@ -15,8 +16,16 @@ public class Box : MonoBehaviour
     //[SerializeField] private Transform coins;
     [SerializeField] private GameObject coinsPrefab;
     [SerializeField] private Transform coinsParents;
-    [SerializeField] private Animator anim;
+    [SerializeField] private Animator animatorBox;
 
+    [SerializeField] private Animation animationBox;
+    // [SerializeField] private Animator animatorShine;
+    // [SerializeField] private Animation animationShine;
+    [SerializeField] private ParticleSystem particleSystemShine;
+    [SerializeField] private GameObject confirmPrefab;
+    [SerializeField] private GameObject shinePrefab;
+    [SerializeField] private Vector3 shineScale;
+    [SerializeField] private Vector3 shinePos;
     [SerializeField] private Transform buttonts;
 
     // [SerializeField] private Transform coinendTS;
@@ -26,20 +35,32 @@ public class Box : MonoBehaviour
     private int count = 0;
     private void Start()
     {
-        anim.Play("box_close_1");
+        animatorBox.enabled = false;
     }
     public void PurchasedButtonOnClick()
     {
-        //播放开箱动画，播放金币动画，修改金币数量
+        //弹出确认弹窗，播放动画
+
+        var confirmPanel = Instantiate(confirmPrefab,coinsParents);
+        confirmPanel.transform.localPosition = new Vector3(30, 400, 0);  
+        animatorBox.enabled = true;
+        animationBox.Play();
+        // animationBox.PlayQueued("box_close_1", QueueMode.CompleteOthers);
+        // animationBox.PlayQueued("box_open_2", QueueMode.CompleteOthers);
+        var shine = Instantiate(shinePrefab, coinsParents);
+        shine.name = "shine";
+        shine.transform.position = shinePos;
+        shine.transform.localScale = shineScale;
         isclose = false;
         if (isplay < 3)
         {
             isplay++;
             InvokeRepeating("PlayCoinsAni",0,0.1f);
-            anim.Play("box_open_2");
+            // anim.enabled = true;
+            // anim.Play("box_open_2");
             count = 0;
         }
-
+        
         Debug.Log("ispurchased");
     }
 
@@ -50,13 +71,9 @@ public class Box : MonoBehaviour
         count++;
         var coins = Instantiate(coinsPrefab,coinsParents);
         coins.name = "coin";
-        coins.transform.localScale = new Vector3(0.24f, 0.24f, 0.24f);
-        //StartCoroutine(WaitAndPrint(1f)); 
+        coins.transform.localScale = new Vector3(30, 30,30);
         coins.transform.localPosition = buttonts.position;
         coins.transform.DOLocalMove(coinmove, 3);
-       
-        // yield return new WaitForSecondsRealtime(0.5f);
-        //coins.transform.DOMove(StaticData.Instance.coinTrans, 1);
         //播放完毕后，会让isplay的数量减少
         if (count > 4)
         {
