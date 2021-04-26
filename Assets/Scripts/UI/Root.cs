@@ -15,7 +15,6 @@ namespace UI
             chest.name = "Chest";
             chest.transform.localScale = Vector3.one;
             chest.transform.localPosition = Vector3.zero;
-            Debug.Log("OpenButtonOnClick");
         }
     }
 }

@@ -1,9 +1,5 @@
 namespace Base
 {
-    /// <summary>
-    /// 不继承mono的单例基类
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
     public class Singleton<T> where T : new()
     {
         private static T _instance;

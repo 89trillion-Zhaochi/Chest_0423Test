@@ -1,6 +1,7 @@
 ﻿using Data;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace UI
@@ -10,12 +11,11 @@ namespace UI
         [SerializeField] private GameObject coinsPrefab;
         [SerializeField] private Transform coinsParents;
         [SerializeField] private Animator animatorBox;
-        [SerializeField] private Animation animationBox;
-        [SerializeField] private Vector3 coinmove;
+        [SerializeField] private Vector3 coinMove;
         [SerializeField] private Text confirmText;
         [SerializeField] private Text purchasedButtonText;
         [SerializeField] private Transform confirmTs;
-
+        
         private int count;
 
         private void Start()
@@ -26,7 +26,6 @@ namespace UI
         public void PurchasedButtonOnClick()
         {
             animatorBox.enabled = true;
-            animationBox.Play();
             confirmText.text = "正在打开宝箱..."; //打开宝箱文字显示
             Invoke(nameof(ChangeConfirm), StaticData.Instance.confirmTime);
             if (StaticData.Instance.addCount <= 3)
@@ -65,7 +64,7 @@ namespace UI
                                             new Vector3(Random.Range(-10.0f, 10.0f), Random.Range(-10.0f, 10.0f), 0);
             //利用随机数对金币生成的位置做一个小的随机生成
             //new Vector3(0,350,90);//应该是最佳位置
-            coins.transform.DOLocalMove(coinmove, StaticData.Instance.coinAniMove)
+            coins.transform.DOLocalMove(coinMove, StaticData.Instance.coinAniMove)
                 .SetDelay(StaticData.Instance.coinAniDelay);
             if (--count < 0)
             {
