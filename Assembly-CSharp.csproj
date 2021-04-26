@@ -73,7 +73,6 @@
      <Compile Include="Assets\Scripts\UI\Chest.cs" />
      <Compile Include="Assets\Scripts\UI\Coins.cs" />
      <Compile Include="Assets\Scripts\UI\Root.cs" />
-     <Compile Include="Assets\Scripts\UI\Shine.cs" />
      <None Include="Assets\Spine\version.txt" />
      <None Include="Assets\CustomPlugins\AEPToUnityAnimation\readme.txt" />
      <None Include="Assets\CustomPlugins\AEPToUnityAnimation\EAPToUnityTool\Plugins\JsonFx\License.txt" />

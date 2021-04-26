@@ -1,28 +1,30 @@
-using UnityEngine;
-/// <summary>
-/// 不继承mono的单例基类
-/// </summary>
-/// <typeparam name="T"></typeparam>
-public class Singleton<T> where T : new()
+namespace Base
 {
-    private static T _instance;
-    private static readonly object objlock = new object();
- 
-    public static T Instance
+    /// <summary>
+    /// 不继承mono的单例基类
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public class Singleton<T> where T : new()
     {
-        get
+        private static T _instance;
+        private static readonly object Objlock = new object();
+ 
+        public static T Instance
         {
-            if (_instance == null)
+            get
             {
-                lock (objlock)
+                if (_instance == null)
                 {
-                    if (_instance == null)
+                    lock (Objlock)
                     {
-                        _instance = new T();
+                        if (_instance == null)
+                        {
+                            _instance = new T();
+                        }
                     }
                 }
+                return _instance;
             }
-            return _instance;
         }
     }
 }

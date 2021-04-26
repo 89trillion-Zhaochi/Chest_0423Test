@@ -1,18 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Data;
+﻿using Data;
 using UnityEngine;
 
-public class Coins : MonoBehaviour
+namespace UI
 {
-    private void Start()
+    public class Coins : MonoBehaviour
     {
-        Invoke(nameof(DestroyThis),StaticData.Instance.coinAni);
-    }
+        private void Start()
+        {
+            Invoke(nameof(DestroyThis),StaticData.Instance.coinAni);
+        }
 
-    public void DestroyThis()
-    {
-        Debug.Log("I AM DIED");
-        Destroy(this.gameObject);
+        public void DestroyThis()
+        {
+            Debug.Log("I AM DIED");
+            Destroy(this.gameObject);
+        }
     }
 }

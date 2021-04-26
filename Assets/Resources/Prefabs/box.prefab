@@ -94,58 +94,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e439bd5ba94724e07b6830cee9c23688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isclose: 1
-  isplay: 0
   coinsPrefab: {fileID: 7002117287387457006, guid: ee3ae60d40d194e2b94bdac926676d30,
     type: 3}
   coinsParents: {fileID: 8588217996663174902}
   animatorBox: {fileID: 4633565689647181947}
   animationBox: {fileID: 2394080236187111844}
-  particleSystemShine: {fileID: 6901609882741191719, guid: 0e02026b411fd46e1a408b5138ae4a9d,
-    type: 3}
-  confirmPrefab: {fileID: 666449729622700252, guid: 25457c87d61ee47bcb6e269b3b9fea8a,
-    type: 3}
-  shinePrefab: {fileID: 4953088043433804836, guid: 0e02026b411fd46e1a408b5138ae4a9d,
-    type: 3}
-  shineScale: {x: 100, y: 60, z: 60}
-  shinePos: {x: -20.1, y: 187.2, z: 0}
-  buttonts: {fileID: 1980672331921898948}
   coinmove: {x: 100, y: 1400, z: 0}
   confirmText: {fileID: 4045645744015984590}
-  selfSetTweenLine:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0.014772169
-      value: 0.0045740753
-      inSlope: 0.012353036
-      outSlope: 0.012353036
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.48735005
-      value: 0.010411846
-      inSlope: -0.016525768
-      outSlope: -0.016525768
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.99884033
-      outWeight: 0.29630166
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 1.9303389
-      outSlope: 1.9303389
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   purchasedButtonText: {fileID: 5049767338070859358}
+  confirmTs: {fileID: 1671751300959676469}
 --- !u!1 &974050740880180205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,7 +1439,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shop_TreasureChest_Purple
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8981759882287599428, guid: 0e02026b411fd46e1a408b5138ae4a9d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8981759882287599428, guid: 0e02026b411fd46e1a408b5138ae4a9d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e02026b411fd46e1a408b5138ae4a9d, type: 3}
 --- !u!224 &886005016093961456 stripped
 RectTransform:

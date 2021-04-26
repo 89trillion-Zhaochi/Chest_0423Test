@@ -1,5 +1,7 @@
 using UnityEngine;
 
+namespace Data
+{
     public class CoinDataClass
     {
         //金币数量相关的全局参数
@@ -13,5 +15,6 @@ using UnityEngine;
         public float coinAniMove;//金币动画移动的时间
         public float coinGap;//一组金币中间隔的时间
 
-        public float confimTime;//确认时间
+        public float confirmTime;//确认时间
     }
+}

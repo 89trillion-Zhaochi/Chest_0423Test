@@ -1,19 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Serialization;
 
-public class Root : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private Transform rootTs;
-
-    [SerializeField] private GameObject chest;
-    //点击Root按钮事件
-    public void OpenButtonOnClick()
+    public class Root : MonoBehaviour
     {
-        var _chest = Instantiate(chest, rootTs);
-        _chest.name = "Chest";
-        _chest.transform.localScale = Vector3.one;
-        _chest.transform.localPosition = Vector3.zero;
-        Debug.Log("OpenButtonOnClick");
+        [SerializeField] private Transform rootTs;
+
+        [FormerlySerializedAs("chest")] [SerializeField] private GameObject chestPrefab;
+        //点击Root按钮事件
+        public void OpenButtonOnClick()
+        {
+            var chest = Instantiate(chestPrefab, rootTs);
+            chest.name = "Chest";
+            chest.transform.localScale = Vector3.one;
+            chest.transform.localPosition = Vector3.zero;
+            Debug.Log("OpenButtonOnClick");
+        }
     }
 }
