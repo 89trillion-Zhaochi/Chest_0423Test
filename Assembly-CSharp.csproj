@@ -72,7 +72,6 @@
      <Compile Include="Assets\Scripts\UI\Box.cs" />
      <Compile Include="Assets\Scripts\UI\Chest.cs" />
      <Compile Include="Assets\Scripts\UI\Coins.cs" />
-     <Compile Include="Assets\Scripts\UI\Confirm.cs" />
      <Compile Include="Assets\Scripts\UI\Root.cs" />
      <Compile Include="Assets\Scripts\UI\Shine.cs" />
      <None Include="Assets\Spine\version.txt" />

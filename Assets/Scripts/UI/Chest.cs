@@ -22,7 +22,7 @@ public class Chest : MonoBehaviour
         StaticData.Instance.addCount = 1;
         StaticData.Instance.coinAmounts = 0;
         StaticData.Instance.coinAniDelay = 1.3f;
-        StaticData.Instance.coinAniMove = 1f;
+        StaticData.Instance.coinAniMove = 0.7f;
         StaticData.Instance.coinAni = StaticData.Instance.coinAniDelay + StaticData.Instance.coinAniMove;
         StaticData.Instance.coinGap = 0.1f;
         StaticData.Instance.confimTime = 1.3f;
