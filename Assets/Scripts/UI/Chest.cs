@@ -10,7 +10,6 @@ namespace UI
         [SerializeField] private Transform chestTs;
         [SerializeField] private Transform viewPortTs;
         [FormerlySerializedAs("box")] [SerializeField] private GameObject boxPrefab;
-        [SerializeField] private Transform coinUI;
         [SerializeField] private Text coinAmount;
         //[SerializeField] private int co
 
@@ -18,13 +17,12 @@ namespace UI
         {
             //对数据进行热更新，留出接口，方便将来从服务器读取数据
             StaticData.Instance.coinAmounts = 0;
-            
             CreateBox();
         }
 
         private void Update()
         {
-            coinAmount.text = StaticData.Instance.coinAmounts.ToString() + "K";
+            coinAmount.text = StaticData.Instance.coinAmounts + "K";
         }
 
         public void CloseButtonOnClick() //销毁chest

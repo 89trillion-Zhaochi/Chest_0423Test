@@ -102,12 +102,10 @@ MonoBehaviour:
   confirmText: {fileID: 4045645744015984590}
   purchasedButtonText: {fileID: 5049767338070859358}
   confirmTs: {fileID: 1671751300959676469}
-  coinAdd: 0
   coinAniDelay: 1.3
-  coinAni: 2
   coinAniMove: 0.7
   coinGap: 0.1
-  confirmTime: 1.3
+  addCount: 1
 --- !u!1 &974050740880180205
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,7 +855,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1813022214531143122}
   - component: {fileID: 4633565689647181947}
-  - component: {fileID: 2394080236187111844}
   - component: {fileID: 1271486879276429953}
   m_Layer: 0
   m_Name: AEP Animation
@@ -908,23 +905,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!111 &2394080236187111844
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5991776018458078120}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 2afd4daaf070d4cfabfd98510055b1c3, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 2afd4daaf070d4cfabfd98510055b1c3, type: 2}
-  - {fileID: 7400000, guid: 0d0256837506d4935bed467c833e546c, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &1271486879276429953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -937,8 +917,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b7772e249fe4f9087c7eba33da9447, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleSystem: {fileID: 8058870944042488457}
   animator: {fileID: 4633565689647181947}
+  box: {fileID: 6329119732892225163}
 --- !u!1 &6255617346510749425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,7 +1105,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 533, y: -1557.0157}
+  m_AnchoredPosition: {x: 533, y: -1655.0256}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8098902444732411342
@@ -1255,7 +1235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.367462, y: 187.74696}
+  m_AnchoredPosition: {x: 12.367462, y: 183.98793}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8474193097800027510
@@ -1472,12 +1452,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8981759882287599428, guid: 0e02026b411fd46e1a408b5138ae4a9d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e02026b411fd46e1a408b5138ae4a9d, type: 3}
---- !u!198 &8058870944042488457 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 6901609882741191719, guid: 0e02026b411fd46e1a408b5138ae4a9d,
-    type: 3}
-  m_PrefabInstance: {fileID: 3463740844279047854}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &886005016093961456 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4348811669241924190, guid: 0e02026b411fd46e1a408b5138ae4a9d,
