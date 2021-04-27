@@ -1,7 +1,6 @@
 ﻿using Data;
 using DG.Tweening;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace UI
@@ -23,11 +22,16 @@ namespace UI
             animatorBox.enabled = false;
         }
 
+        
+        //按下按钮之后
         public void PurchasedButtonOnClick()
         {
+            //1.显示宝箱动画
             animatorBox.enabled = true;
+            //2.显示加载文字
             confirmText.text = "正在打开宝箱..."; //打开宝箱文字显示
             Invoke(nameof(ChangeConfirm), StaticData.Instance.confirmTime);
+            //3.计算实际生成的金币数和金币动画数
             if (StaticData.Instance.addCount <= 3)
             {
                 count = StaticData.Instance.addCount * 5 - 1;
@@ -36,25 +40,27 @@ namespace UI
             {
                 count = 14;
             }
-
+            //4.调用金币动画，修改按钮显示金币数，修改金币总数
             Invoke(nameof(CreatCoins), StaticData.Instance.confirmTime);
             Invoke(nameof(ChangeButton),
                 StaticData.Instance.coinAni + StaticData.Instance.confirmTime + count * StaticData.Instance.coinGap);
         }
-
+        
+        //修改按钮文字
         public void ChangeButton()
         {
             StaticData.AmountAdd();
             StaticData.SelfAdd();
             purchasedButtonText.text = "购买 " + StaticData.Instance.addCount.ToString() + "K金币";
         }
-
-        public void CreatCoins() //每次创建5个金币
+        //调用创建金币的具体函数
+        public void CreatCoins() 
         {
             InvokeRepeating(nameof(PlayCoinsAni), 0, StaticData.Instance.coinGap);
         }
 
         // ReSharper disable Unity.PerformanceAnalysis
+        // 创建具体数目的金币动画实体
         public void PlayCoinsAni()
         {
             var coins = Instantiate(coinsPrefab, coinsParents);

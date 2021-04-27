@@ -12,7 +12,6 @@ namespace UI
 
         public void DestroyThis()
         {
-            Debug.Log("I AM DIED");
             Destroy(this.gameObject);
         }
     }
