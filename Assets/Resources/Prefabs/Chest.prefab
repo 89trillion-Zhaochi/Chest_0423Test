@@ -558,8 +558,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chestTs: {fileID: 6819069051524253119}
   viewPortTs: {fileID: 905840559106945912}
-  boxPrefab: {fileID: 325345781508438780, guid: 64b212fa085074b3cb687a7c0b4a38f0,
-    type: 3}
+  box: {fileID: 325345781508438780, guid: 64b212fa085074b3cb687a7c0b4a38f0, type: 3}
+  coinUI: {fileID: 2668914806289802253}
   coinAmount: {fileID: 2003034560265594026}
 --- !u!1 &5063230750789983274
 GameObject:
@@ -727,7 +727,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0K
+  m_Text: 123.2K
 --- !u!1 &6832131321809039657
 GameObject:
   m_ObjectHideFlags: 0
