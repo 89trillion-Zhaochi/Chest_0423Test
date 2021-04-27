@@ -11,23 +11,14 @@ namespace UI
         [SerializeField] private Transform viewPortTs;
         [FormerlySerializedAs("box")] [SerializeField] private GameObject boxPrefab;
         [SerializeField] private Transform coinUI;
-
         [SerializeField] private Text coinAmount;
         //[SerializeField] private int co
 
         public void Start()
         {
             //对数据进行热更新，留出接口，方便将来从服务器读取数据
-            StaticData.Instance.coinTrans = coinUI.localPosition;
-            StaticData.Instance.addCount = 1;
             StaticData.Instance.coinAmounts = 0;
-            StaticData.Instance.coinAniDelay = 1.3f;
-            StaticData.Instance.coinAniMove = 0.7f;
-            StaticData.Instance.coinAni = StaticData.Instance.coinAniDelay + StaticData.Instance.coinAniMove;
-            StaticData.Instance.coinGap = 0.1f;
-            StaticData.Instance.confirmTime = 1.3f;
-        
-        
+            
             CreateBox();
         }
 

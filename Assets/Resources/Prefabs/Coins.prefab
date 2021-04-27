@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7810303924534838242}
   - component: {fileID: 330277793210770469}
   - component: {fileID: 1522769636982281663}
-  - component: {fileID: 831841830537255349}
   m_Layer: 0
   m_Name: Coins
   m_TagString: Untagged
@@ -110,18 +109,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 4
   m_TargetDisplay: 0
---- !u!114 &831841830537255349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7002117287387457006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 716e84ae57aac4623922915dcb1e60cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8434726488989162001
 GameObject:
   m_ObjectHideFlags: 0

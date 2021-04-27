@@ -98,11 +98,16 @@ MonoBehaviour:
     type: 3}
   coinsParents: {fileID: 8588217996663174902}
   animatorBox: {fileID: 4633565689647181947}
-  animationBox: {fileID: 2394080236187111844}
-  coinmove: {x: 100, y: 1400, z: 0}
+  coinMove: {x: 100, y: 1400, z: 0}
   confirmText: {fileID: 4045645744015984590}
   purchasedButtonText: {fileID: 5049767338070859358}
   confirmTs: {fileID: 1671751300959676469}
+  coinAdd: 0
+  coinAniDelay: 1.3
+  coinAni: 2
+  coinAniMove: 0.7
+  coinGap: 0.1
+  confirmTime: 1.3
 --- !u!1 &974050740880180205
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,6 +858,7 @@ GameObject:
   - component: {fileID: 1813022214531143122}
   - component: {fileID: 4633565689647181947}
   - component: {fileID: 2394080236187111844}
+  - component: {fileID: 1271486879276429953}
   m_Layer: 0
   m_Name: AEP Animation
   m_TagString: Untagged
@@ -919,6 +925,20 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &1271486879276429953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5991776018458078120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7b7772e249fe4f9087c7eba33da9447, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystem: {fileID: 8058870944042488457}
+  animator: {fileID: 4633565689647181947}
 --- !u!1 &6255617346510749425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,7 +1125,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 533, y: -1489.9664}
+  m_AnchoredPosition: {x: 533, y: -1557.0157}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8098902444732411342
@@ -1412,12 +1432,12 @@ PrefabInstance:
     - target: {fileID: 4348811669241924190, guid: 0e02026b411fd46e1a408b5138ae4a9d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 196
+      value: 182
       objectReference: {fileID: 0}
     - target: {fileID: 4348811669241924190, guid: 0e02026b411fd46e1a408b5138ae4a9d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1571
+      value: -1582.9
       objectReference: {fileID: 0}
     - target: {fileID: 4348811669241924190, guid: 0e02026b411fd46e1a408b5138ae4a9d,
         type: 3}
@@ -1439,6 +1459,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shop_TreasureChest_Purple
       objectReference: {fileID: 0}
+    - target: {fileID: 4953088043433804836, guid: 0e02026b411fd46e1a408b5138ae4a9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8981759882287599428, guid: 0e02026b411fd46e1a408b5138ae4a9d,
         type: 3}
       propertyPath: m_Enabled
@@ -1447,6 +1472,12 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8981759882287599428, guid: 0e02026b411fd46e1a408b5138ae4a9d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e02026b411fd46e1a408b5138ae4a9d, type: 3}
+--- !u!198 &8058870944042488457 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6901609882741191719, guid: 0e02026b411fd46e1a408b5138ae4a9d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3463740844279047854}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &886005016093961456 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4348811669241924190, guid: 0e02026b411fd46e1a408b5138ae4a9d,
