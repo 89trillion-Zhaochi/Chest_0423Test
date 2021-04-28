@@ -208,10 +208,10 @@
      <None Include="Assets\Spine\Runtime\spine-unity\Shaders\Sprite\CGIncludes\SpritePixelLighting.cginc" />
      <None Include="Assets\Spine\Runtime\spine-unity\Shaders\Outline\SkeletonGraphic\Spine-SkeletonGraphic-Outline.shader" />
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/zhaochi/Chest_0423Test/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/zhaochi/Chest_0423Test/Chest_0423Test/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/zhaochi/Chest_0423Test/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/zhaochi/Chest_0423Test/Chest_0423Test/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.24f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -406,13 +406,13 @@
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.24f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="JsonFx.json">
- <HintPath>/Users/zhaochi/Chest_0423Test/Assets/CustomPlugins/AEPToUnityAnimation/EAPToUnityTool/Plugins/JsonFx/JsonFx.json.dll</HintPath>
+ <HintPath>/Users/zhaochi/Chest_0423Test/Chest_0423Test/Assets/CustomPlugins/AEPToUnityAnimation/EAPToUnityTool/Plugins/JsonFx/JsonFx.json.dll</HintPath>
  </Reference>
  <Reference Include="DOTween">
- <HintPath>/Users/zhaochi/Chest_0423Test/Assets/DOTween/DOTween.dll</HintPath>
+ <HintPath>/Users/zhaochi/Chest_0423Test/Chest_0423Test/Assets/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="DOTweenEditor">
- <HintPath>/Users/zhaochi/Chest_0423Test/Assets/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ <HintPath>/Users/zhaochi/Chest_0423Test/Chest_0423Test/Assets/DOTween/Editor/DOTweenEditor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Hub/Editor/2019.4.24f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

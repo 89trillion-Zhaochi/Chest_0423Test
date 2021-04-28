@@ -14,6 +14,18 @@ TextureImporter:
   - first:
       213: -209143576518600603
     second: shadow
+  - first:
+      213: -3773995664966322707
+    second: AEP_Atlas_0
+  - first:
+      213: -30645784461638500
+    second: AEP_Atlas_1
+  - first:
+      213: 528718928575155108
+    second: AEP_Atlas_2
+  - first:
+      213: -4759598359583354153
+    second: AEP_Atlas_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -87,85 +99,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 3_2
+      name: AEP_Atlas_0
       rect:
         serializedVersion: 2
         x: 0
         y: 130
         width: 413
         height: 345
-      alignment: 9
-      pivot: {x: 0.5254237, y: 0.09855072}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c09cd4fe57c6efd10800000000000000
-      internalID: 2161284124966242572
+      spriteID: de571dd20f210abc0800000000000000
+      internalID: -3773995664966322707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3d_2
-      rect:
-        serializedVersion: 2
-        x: 523
-        y: 0
-        width: 412
-        height: 226
-      alignment: 9
-      pivot: {x: 0.51334953, y: 0.19911504}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 140f17aa57295d650800000000000000
-      internalID: 6257068291369594945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3u_2
+      name: AEP_Atlas_1
       rect:
         serializedVersion: 2
         x: 523
         y: 228
         width: 407
         height: 197
-      alignment: 9
-      pivot: {x: 0.522113, y: 0.0964467}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e103e1b134e7e3e10800000000000000
-      internalID: 2179318096376770590
+      spriteID: c940d4742df139ff0800000000000000
+      internalID: -30645784461638500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shadow
+      name: AEP_Atlas_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 521
         height: 128
-      alignment: 9
-      pivot: {x: 0.30956453, y: 0.44917175}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 568dd867609f81df0800000000000000
-      internalID: -209143576518600603
+      spriteID: 4ab4fb37013665700800000000000000
+      internalID: 528718928575155108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AEP_Atlas_3
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 0
+        width: 412
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d29087628282fdb0800000000000000
+      internalID: -4759598359583354153
       vertices: []
       indices: 
       edges: []
